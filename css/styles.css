@@ -18,7 +18,6 @@
 
 body {
   font-family: "roboto", sans-serif;
-  font-style: normal;
 }
 
 .list {
@@ -32,14 +31,13 @@ body {
 
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-.logo > .left {
+.left {
   color: var(--logo-color-left);
 }
 
@@ -47,6 +45,7 @@ body {
   font-style: inherit;
   color: var(--button-color);
   background-color: var(--button-background-color);
+  cursor: pointer;
 }
 
 .button:focus,
@@ -57,11 +56,11 @@ body {
 
 /*-header-*/
 
-.logo > .right-header {
+.right-header {
   color: var(--logo-color-right-header);
 }
 
-.item {
+.site-nav-link {
   color: var(--nav-item-color);
   font-weight: 500;
   font-size: 14px;
@@ -69,8 +68,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.item:focus,
-.item:hover {
+.site-nav-link:focus,
+.site-nav-link:hover {
   color: var(--nav-item-focus-color);
   font-weight: 500;
   font-size: 14px;
@@ -78,7 +77,15 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts.link {
+.site-nav-link.current {
+  color: var(--nav-item-focus-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link {
   color: var(--contacts-color);
   font-weight: 500;
   font-size: 14px;
@@ -86,8 +93,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts:hover,
-.contacts:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--nav-item-focus-color);
   font-weight: 500;
   font-size: 14px;
@@ -101,13 +108,12 @@ body {
   background-color: var(--background-color-dark);
 }
 
-.logo > .right-footer {
+.right-footer {
   color: var(--logo-color-right-footer);
 }
 
 .address {
   font-style: inherit;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -148,6 +154,16 @@ body {
   letter-spacing: 0.06em;
 }
 
+.button.order-btn {
+  color: #fff;
+  background-color: #2196f3;
+}
+
+.button.order-btn:hover,
+.button.order-btn:focus {
+  background-color: #188ce8;
+}
+
 /*-secondary-section-*/
 .secondary-section-undertitle {
   color: var(--title-color);
@@ -160,7 +176,6 @@ body {
 
 .secondary-section-text {
   color: var(--text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -197,7 +212,6 @@ body {
 
 .forth-section-text {
   color: var(--text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -207,7 +221,7 @@ body {
 /*-portfolio page-*/
 
 /*-buttons-section-*/
-.buttons-section .button {
+.portfolio-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -216,7 +230,7 @@ body {
 }
 
 /*-pictures-section-*/
-.pictures-section-undertitle {
+.portfolio-title {
   color: var(--title-color);
   font-weight: 700;
   font-size: 18px;
@@ -224,9 +238,8 @@ body {
   letter-spacing: 0.06em;
 }
 
-.pictures-section-text {
+.portfolio-desc {
   color: var(--text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
